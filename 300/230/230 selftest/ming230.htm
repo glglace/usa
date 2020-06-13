@@ -1,0 +1,203 @@
+
+<HTML>
+
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=big5">
+<TITLE>明勳電子相簿第230期 如何製作學生自我測驗試卷 5/28/2001</TITLE>
+
+<SCRIPT language=JavaScript>
+function clickHandler() {
+  var targetId, srcElement, targetElement;
+  srcElement = window.event.srcElement;
+  if (srcElement.className == "Outline") {
+     targetId = "details_" + srcElement.id;
+     targetElement = document.all(targetId);
+     if (targetElement.style.display == "none") {
+        targetElement.style.display = "";
+     } else {
+        targetElement.style.display = "none";
+     }
+  }
+}
+
+document.onclick = clickHandler;
+
+</SCRIPT>
+</HEAD>
+
+<BODY bgColor=#ffffff>
+
+<h1 align="center">
+
+ 如何製作學生自我測驗試卷&nbsp;</h1>
+<p align="left"><font color="#000080"><b>簡介:</b></font></p> 
+ 
+<p align="left">江老師想要在段考前出一份練習試卷讓學生自我測驗,         
+他的想法是製作一個網頁, 裡面有十個題目,         
+學生可以在家裡或學校上網連結到江老師的首頁,         
+然後連結到這一份練習試卷, 每一個題目的下面都有一個&quot;參考答案&quot;的超連結,         
+學生可以在想好答案後按&quot;參考答案&quot;看看自己是否答對了.</p>       
+       
+<p align="left"><font color="#000080"><b>問題:&nbsp;</b></font></p>       
+       
+<p align="left">&quot;參考答案&quot;的超連結按下後,         
+答案要出現在哪裡比較好呢? 最好是出現在該題的下面,       
+這樣子非常方便閱讀又不會影響思考,       
+但是要如何做到這種效果呢?</p>       
+       
+<p align="left"><font color="#000080"><b>首先請看看兩題範例:</b></font></p>       
+       
+<hr>        
+            
+      <P>(1)母親節是每年五月的第幾個星期天?</P>             
+      <blockquote>        
+      <P>              
+      <U>             
+      <SPAN class=Outline id=Out1 style="COLOR: rgb(0,0,0); CURSOR: hand">參考答案</SPAN>             
+      </U>             
+      </P>             
+      <P id=details_Out1 style="DISPLAY: none; POSITION: relative"><b><font color="#008000">答案: 母親節是每年五月的第二個星期天.</font></b></P>                                    
+      </blockquote>                               
+                                   
+<hr>                             
+        <p>(2)下列那個縣市不靠海？</p>                             
+        <blockquote>                             
+        <p>A.臺中市</p>                             
+        <p>B.臺南市</p>                             
+        <p>C.臺東縣</p>                             
+        <p>D.南投縣</p>                             
+        <p>                              
+        <U>                                  
+        <SPAN class=Outline id=Out2 style="COLOR: rgb(0,0,0); CURSOR: hand">參考答案</SPAN></U>                                 
+        </p>                            
+        <P id=details_Out2 style="DISPLAY: none; POSITION: relative"><B><font color="#008000">答案: D.</font></B></P>                                 
+        </blockquote>                              
+                                     
+                               
+<hr>          
+<p><b><font color="#000080">接著(3)(4)是上面兩題的樣本,你可以拿來套用, 如何套用請看以下說明:</font></b></p>         
+                                    
+                              
+<hr>                          
+                         
+                        
+<P>(3)這是問答題的樣本, 套用的方法如下:                         
+首先打開您的網頁編輯器, 譬如說 FrontPage,                         
+然後直接修改這一行文字,                         
+您也可以在這裡做一些文字格式的設定, 譬如說將<font color="#CC0033"><b>關鍵字</b></font>變色.</P>                            
+      <blockquote>                       
+      <P>                             
+      <U>                            
+      <SPAN class=Outline id=Out3 style="COLOR: rgb(0,0,0); CURSOR: hand">參考答案</SPAN>                            
+      </U>                            
+      </P>                            
+      <P id=details_Out3 style="DISPLAY: none; POSITION: relative"><font color="#008000">答案:                      
+      恭喜您修改成功了!</font></P>                                  
+      </blockquote>                             
+                                 
+<hr>                       
+                        
+<p>(4)這是選擇題的樣本</p>                           
+        <blockquote>                           
+        <p>A.選項一</p>                           
+        <p>B.選項二</p>                           
+        <p>C.選項三</p>                           
+        <p>D.選項四</p>                           
+        <p>                            
+        <U>                                
+        <SPAN class=Outline id=Out4 style="COLOR: rgb(0,0,0); CURSOR: hand">參考答案</SPAN>                                
+        </U>                                
+        </p>                           
+        <P id=details_Out4 style="DISPLAY: none; POSITION: relative"><B><font color="#008000">答案:你說呢?</font></B></P>                                
+        </blockquote>                             
+                              
+<hr>      
+      
+<!-- 你在找第四題的原始碼的最後一行嗎? 就是這裡啦! -->      
+           
+                     
+<font color="#000080"><b>           
+                    
+如果你想再增加題目, 例如說你想增加第五題, 也是選擇題,方法如下:</b></font>              
+<p><font color="#000080"><b>在網頁編輯器中首先選取第四題的題目和答案,               
+複製再貼上到第四題的下面, 這樣就好了!</b></font></p>              
+<p><font color="#CC0033">請注意這個方法在 Windows2000 英文版和               
+FrontPage 2000 英文版中測試成功,               
+如果您的環境不同可能不會這麼順利</font></p>              
+                      
+                                
+                     
+                               
+                         
+<hr>               
+                   
+<font color="#000080"><b>              
+                  
+如果簡單的複製貼上無法讓您新增一個題目, 不要灰心,        
+以下的說明會幫助你一步一步完成:</b></font>           
+<p><b><font color="#000080">第四題的原始碼在以下的文字框中,</font></b>        
+&nbsp;</p>         
+<p>       
+<b><font color="#000080">首先, 在文字框中把題號改為5,       
+並修改題目和答案的內容, 再將這段文字中的 id=Out4 改為 id=Out5, 還有          
+id=details_Out4 改為 id=details_Out5,       
+都弄好之後將滑鼠指標移到文字框中, 按滑鼠右鍵, 選擇 &quot;全選&quot;,       
+然後再選 &quot;複製&quot;&nbsp;</font></b></p>         
+<p><b><font color="#000080">接下來,檢視這份文件的原始碼 (如果你使用的瀏覽器是        
+IE, 到命令列中選檢視然後選原始碼),&nbsp;</font></b></p>          
+<p><b><font color="#000080">這份網頁原始碼將會出現在一個純文字編輯器中,       
+如果這是你第一次看到網頁的原始碼可能會覺得不知所云,       
+沒關係, 你只要想辦法找到第四題的原始碼就好了,       
+然後將滑鼠游標停在第四題的原始碼的最後一句 &lt;hr&gt;的下面,       
+然後按滑鼠右鍵選貼上</font></b></p>         
+<p><b><font color="#000080">最後, 記得存檔, 然後關掉原始碼所在的</font></b><b><font color="#000080">純文字編輯器,       
+回到瀏覽器中選更新頁面即可看到新增的第五題</font></b></p>         
+<form>          
+          
+<p><textarea rows="20" name="S1" cols="99">           
+<p>(4)這是選擇題的樣本</p>               
+        <blockquote>               
+        <p>A.選項一</p>               
+        <p>B.選項二</p>               
+        <p>C.選項三</p>               
+        <p>D.選項四</p>               
+        <p>                
+        <U>                    
+        <SPAN class=Outline id=Out4 style="COLOR: rgb(0,0,0); CURSOR: hand">參考答案</SPAN>                    
+        </U>                    
+        </p>               
+        <P id=details_Out4 style="DISPLAY: none; POSITION: relative">
+        <B><font color="#008000">答案:你說呢?</font></B>
+        </P>                    
+        </blockquote>                 
+                  
+<hr></textarea></p>        
+</form>        
+<p><font color="#000080"><b>第六題以後依此類推,      
+經過這樣的練習後希望你會做了,</b></font>         
+</p>        
+<p><font color="#000080"><b>如果還是有問題可以來信問我:</b></font> <a href="mailto:mchiang@online.emich.edu">mchiang@online.emich.edu</a>          
+</p>         
+<p><font color="#CC0033">如果您閱讀了這份文件後應用此方法出練習試卷,     
+麻煩email一份給我, 我想要收集</font>         
+</p>        
+<p><font color="#CC0033">如果您願意把您的練習試卷分享給所有老師,     
+請在email中註明以下這段文字</font>         
+</p>        
+<p><font color="#CC0033">我同意任何人都可以免費使用並自由修改這份練習試卷的內容於非營利及教育用途上</font>         
+</p>        
+<hr>        
+        
+<p align="center"><font color="#000080"><b>為了避免學生所使用的瀏覽器無法順利的打開這份文件請在試卷的最前面加上這行字:</b></font></p>       
+<p align="center"><font color="#CC0033">如果無法打開參考答案,請參閱試卷底部。</font></p>       
+<p align="center"><font color="#000080"><b>然後把每一題的答案列在試卷的最底部</b></font></p>       
+                  
+        
+                     
+             
+                       
+            
+                      
+                
+</BODY>            
+</HTML>                  

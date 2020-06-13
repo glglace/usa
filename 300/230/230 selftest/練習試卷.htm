@@ -1,0 +1,96 @@
+
+<HTML>
+
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=big5">
+<TITLE></TITLE>
+
+<SCRIPT language=JavaScript>
+function clickHandler() {
+  var targetId, srcElement, targetElement;
+  srcElement = window.event.srcElement;
+  if (srcElement.className == "Outline") {
+     targetId = "details_" + srcElement.id;
+     targetElement = document.all(targetId);
+     if (targetElement.style.display == "none") {
+        targetElement.style.display = "";
+     } else {
+        targetElement.style.display = "none";
+     }
+  }
+}
+
+document.onclick = clickHandler;
+
+</SCRIPT>
+</HEAD>
+
+<BODY bgColor=#ffffff>
+
+<h1 align="center">【某某市某某國小某年某班練習試卷】</h1> 
+
+<p align="center"><font color="#cc0033">如果無法打開參考答案,<a href="#解答">請參閱試卷底部</a></font></p> 
+
+<hr>
+       
+      <P>(1)母親節是每年五月的第幾個星期天?</P>        
+      <blockquote>   
+      <P>         
+      <U>        
+      <SPAN class=Outline id=Out1 style="COLOR: rgb(0,0,0); CURSOR: hand">參考答案</SPAN>        
+      </U>        
+      </P>        
+      <P id=details_Out1 style="DISPLAY: none; POSITION: relative">
+      <b><font color="#008000">答案: 母親節是每年五月的第二個星期天.</font></b></P>                     
+      </blockquote>                           
+                               
+<hr>                         
+        <p>(2)下列那個縣市不靠海？</p>                         
+        <blockquote>                         
+        <p>A.臺中市</p>                         
+        <p>B.臺南市</p>                         
+        <p>C.臺東縣</p>                         
+        <p>D.南投縣</p>                         
+        <p>                          
+        <U>                              
+        <SPAN class=Outline id=Out2 style="COLOR: rgb(0,0,0); CURSOR: hand">參考答案</SPAN></U>      
+        </p>                        
+        <P id=details_Out2 style="DISPLAY: none; POSITION: relative">
+        <B><font color="#008000">答案: D.</font></B></P>                             
+        </blockquote>                          
+<hr>      
+               
+     
+<!-- 
+從這裡開始你可插入第三題,第四題.... 
+記得每一題的原始碼中的 id=Outx,id=details_Outx, 其中x要與題號相對應
+-->                   
+
+
+
+
+
+
+          
+                    
+         
+                   
+             
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p><a name="解答">解答</a>:</p>
+<p>1. 第二個 </p>
+<p>2. D</p>
+          
+                    
+         
+                   
+             
+</BODY>         
+</HTML>               

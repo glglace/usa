@@ -1,0 +1,94 @@
+
+<HTML>
+
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=big5">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<TITLE></TITLE>
+<META content="text/html; charset=big5" http-equiv=Content-Type>
+<STYLE>BODY {
+	FONT-FAMILY: "verdana"
+}
+TD {
+	FONT-FAMILY: "verdana"; FONT-SIZE: 9pt; LETTER-SPACING: 0.1em; LINE-HEIGHT: 1.3
+}
+A {
+	COLOR: #336699; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: green
+}
+P {
+	FONT-SIZE: 10pt; MARGIN-BOTTOM: 4pt; MARGIN-TOP: 4pt
+}
+B {
+	COLOR: #336699
+}
+I {
+	COLOR: green
+}
+</STYLE>
+
+<SCRIPT language=JavaScript>
+function clickHandler() {
+  var targetId, srcElement, targetElement;
+  srcElement = window.event.srcElement;
+  if (srcElement.className == "Outline") {
+     targetId = srcElement.id + "details";
+     targetElement = document.all(targetId);
+     if (targetElement.style.display == "none") {
+        targetElement.style.display = "";
+     } else {
+        targetElement.style.display = "none";
+     }
+  }
+}
+
+document.onclick = clickHandler;
+
+</SCRIPT>
+</HEAD>
+
+<BODY bgColor=#ffffff>
+
+<TABLE align=center bgColor=#000000 border=0 cellPadding=5 cellSpacing=1 width=640 valign="bottom">
+  
+  <TR bgColor=#cc3399>
+    <TD align=middle colSpan=4 height=28><B><font color="#000000">【如何使用JavaScript製作自我測驗題】</font></B></TD>
+  </TR>
+  
+  <TR bgColor=#fff9ff>
+    
+    <TD colSpan=4 height=8>
+      
+      <P>『如果無法打開參考答案,請參閱試卷底部。』</P>
+      <P>&nbsp;</P>
+      
+      
+      <P>(1)母親節是每年五月的第幾個星期天?      
+      <U>     
+      <SPAN class=Outline id=Out1 style="COLOR: rgb(0,0,0); CURSOR: hand">參考答案</SPAN>     
+      </U>     
+      </P>     
+      <P id=Out1details style="DISPLAY: none; POSITION: relative"><b>答案: 母親節是每年五月的<FONT color=#cc0033>第二個</FONT>星期天.</b></P>     
+          
+      
+      <P>(2)下列那個縣市不靠海？(A臺中市 B 臺南市 C 臺東縣 D南投縣) 
+      <U>     
+      <SPAN class=Outline id=Out2 style="COLOR: rgb(0,0,0); CURSOR: hand">參考答案</SPAN>     
+      </U>     
+      </P>      
+      <P id=Out2details style="DISPLAY: none; POSITION: relative"><B>答案: D.</B>   
+      </P>   
+    
+    </TD>   
+  
+  </TR>
+     
+</TABLE>   
+   
+   
+   
+   
+   
+</BODY></HTML>   
